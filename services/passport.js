@@ -34,7 +34,6 @@ passport.use(
             .then(user => done(null, user));
         }
       });
-
       /*const existingUser = await User.findOne({ googleId: profile.id });
 
       if (existingUser) {
