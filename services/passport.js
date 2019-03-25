@@ -34,15 +34,6 @@ passport.use(
             .then(user => done(null, user));
         }
       });
-      /*const existingUser = await User.findOne({ googleId: profile.id });
-
-      if (existingUser) {
-        done(null, existingUser);
-        return done(null, user);
-      }
-
-      const user = await new User({ googleId: profile.id }).save();
-      done(null, user);*/
     }
   )
 );
