@@ -16,11 +16,14 @@ class Header extends Component {
       case undefined:
         return "undefined";
       default:
-        return (
-          <li>
+        return [
+          <li key="0">
+            <Payments />
+          </li>,
+          <li key="1">
             <a href="/api/logout">Logout</a>
           </li>
-        );
+        ];
     }
   }
 
