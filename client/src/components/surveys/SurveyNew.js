@@ -1,16 +1,27 @@
 /**
- * SurveyNew shows survey input for creating a new survey
+ * SurveyNew shows survey creation and review
  */
 import React, { Component } from "react";
 import SurveyForm from "./SurveyForm";
+import SurveyFromReview from "./SurveyFormReview";
 
 class SurveyNew extends Component {
-  render() {
+  state = { showReview: false };
+
+  renderContent() {
+    if (this.state.showFormReview) {
+      return <SurveyFromReview />;
+    }
+
     return (
-      <div>
-        <SurveyForm />
-      </div>
+      <SurveyForm
+        onSurveySubmit={() => this.setState({ showFormReview: true })}
+      />
     );
+  }
+
+  render() {
+    return <div>{this.renderContent()}</div>;
   }
 }
 
