@@ -3,7 +3,6 @@ import React from "react";
 
 /* meta is from redux form */
 export default ({ input, label, meta }) => {
-  console.log(meta);
   return (
     <div>
       <label>{label}</label>
