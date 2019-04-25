@@ -25,7 +25,11 @@ module.exports = app => {
       }
     });
 
-    console.log(events);
+    const compactEvents = _.compact(events);
+    const uniqueEvents = _.uniqBy(compactEvents, "email", "surveyId");
+
+    // Tell SendGrid that everything went fine:
+    res.send({});
   });
 
   app.post("/api/surveys", requireLogin, requireCredits, async (req, res) => {
