@@ -3,7 +3,7 @@ const helper = sendgrid.mail;
 const keys = require("../config/keys");
 
 /**
- * Extend the sendgrid.Mail
+ * sendgrid.Mail
  */
 class Mailer extends helper.Mail {
   constructor({ subject, recipients }, content) {
