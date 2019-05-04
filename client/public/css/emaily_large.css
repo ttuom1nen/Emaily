@@ -1,8 +1,4 @@
 @media screen and (min-width: 1383px) {
-  .cards-container {
-    max-width: 1031px;
-    margin: 0 auto;
-  }
   .survey-card {
     display: inline-block;
     width: 31%;
@@ -10,8 +6,5 @@
     min-width: 230px;
     height: 300px;
     margin: 1% !important;
-  }
-  .card-header {
-    font-size: 1.1rem;
   }
 }

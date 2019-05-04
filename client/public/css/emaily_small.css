@@ -1,17 +1,24 @@
 .cards-container {
-  border: 1px solid red;
+  max-width: 1031px;
+  margin: 0 auto;
 }
 
 .card-header {
-  font-size: 1.1rem;
+  overflow: hidden;
+  word-break: break-all;
+  font-size: 1.2rem;
 }
 
 .card-body {
+  word-break: break-all;
+  overflow: hidden;
+  max-height: 195px;
 }
 
 .card-footer {
   position: absolute;
   bottom: 0;
+  margin-bottom: 5px !important;
 }
 
 .survey-card {
@@ -26,42 +33,10 @@
 }
 
 @media screen and (max-width: 665px) {
-  .cards-container {
-    border: 1px solid green;
-  }
-  .survey-card {
-    display: "inline-block";
-    width: "50%";
-    max-width: "320px";
-    min-width: "230px";
-    margin: "10px";
-  }
 }
 
 @media screen and (min-width: 666px) and (max-width: 904px) {
-  .cards-container {
-    border: 1px solid purple;
-  }
-  .survey-card {
-    display: "inline-block";
-    width: "50%";
-    max-width: "320px";
-    min-width: "230px";
-    margin: "10px";
-  }
 }
 
 @media screen and (min-width: 905px) and (max-width: 1383px) {
-  .cards-container {
-    max-width: 1031px;
-    margin: 0 auto;
-  }
-  .survey-card {
-    display: inline-block;
-    width: 31%;
-    max-width: 320px;
-    min-width: 230px;
-    height: 300px;
-    margin: 1% !important;
-  }
 }
