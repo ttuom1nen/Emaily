@@ -21,6 +21,3 @@ ReactDOM.render(
   </Provider>,
   document.querySelector("#root")
 );
-
-console.log("STRIPE PUB KEY: ", process.env.REACT_APP_STRIPE_PUB_KEY);
-console.log("Environment is", process.env.NODE_ENV);
