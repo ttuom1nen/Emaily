@@ -24,7 +24,7 @@ nav {
 
 .card-body {
   word-break: break-all;
-  overflow: hidden;
+  overflow-y: auto;
   max-height: 195px;
 }
 
@@ -68,7 +68,7 @@ nav {
 
   .card-body {
     word-break: unset;
-    overflow: unset;
+    overflow: hidden;
     max-height: unset;
   }
 
