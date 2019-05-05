@@ -1,5 +1,13 @@
+nav {
+  margin-bottom: 20px;
+}
+
 .nav-wrapper {
   padding-left: 5px;
+}
+
+.survey-btn-area {
+  margin-top: 25px;
 }
 
 .cards-container {
@@ -11,6 +19,7 @@
   overflow: hidden;
   word-break: break-all;
   font-size: 1.2rem;
+  padding-top: 5px !important;
 }
 
 .card-body {
@@ -44,12 +53,27 @@
 @media screen and (max-width: 600px) {
   .cards-container {
     max-width: 98%;
-    margin: unset;
+    margin: 0 auto;
   }
 
   .survey-card {
+    padding: 2px;
     width: 100%;
+    height: auto;
     max-width: unset;
+    max-height: unset;
+    margin: 5px 0 5px 0px !important;
+    display: block;
+  }
+
+  .card-body {
+    word-break: unset;
+    overflow: unset;
+    max-height: unset;
+  }
+
+  .card-footer {
+    position: unset;
   }
 }
 
