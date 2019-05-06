@@ -2,14 +2,14 @@
 
 Emaily is an emailing app that lets the user send simple surveys to people. The survey emails include options for 'yes' and 'no' answers. The emailing and the answers are handled by [Sendgrid](https://sendgrid.com/?opt=ns "Sendgrid website"). To send a survey, the user must first add credits to his or her account. The payment system is handled by [Stripe](https://stripe.com/ "Stripe website").
 
-## Main front-end:
+### Main front-end:
 
 - React
 - Redux
 
-## Main back-end:
+### Main back-end:
 
-- NodeJS
+- Node.js
 - Express
 - MongoDB, Mongoose
 - Passport (Google Oauth)
@@ -18,7 +18,7 @@ Emaily is an emailing app that lets the user send simple surveys to people. The 
 
 ---
 
-- Deployed in [Heroku](https://dashboard.heroku.com/auth/heroku/callback?code=1b10c404-c93e-4679-9ad9-7add3bf0bd69 "Heroku website")
+- Deployed in [Heroku](https://dashboard.heroku.com/ "Heroku website")
 - [MongoDB Atlas](https://cloud.mongodb.com "MongoDB Atlas website")
 
 ---
