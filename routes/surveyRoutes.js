@@ -18,6 +18,22 @@ module.exports = app => {
     res.send(surveys);
   });
 
+  app.delete("/api/surveys/delete", (req, res) => {
+    console.log(req.data.id);
+    /*
+    Survey.findByIdAndRemove(req.params.id, (err, survey) => {
+      // As always, handle any potential errors:
+      if (err) return res.status(500).send(err);
+      // We'll create a simple object to send back with a message and the id of the document that was removed
+      // You can really do this however you want, though.
+      const response = {
+        message: "Successfully deleted",
+        id: survey._id
+      };
+      return res.status(200).send(response);
+    });*/
+  });
+
   app.get("/api/surveys/thanks", (req, res) => {
     res.send("Thanks for voting!");
   });
